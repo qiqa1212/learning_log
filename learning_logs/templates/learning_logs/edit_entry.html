@@ -7,4 +7,5 @@
         {{ form.as_p }}
         <button name="submit">save changes</button>
     </form>
+    <p><a role="button" class="button is-dark" href="{% url 'learning_logs:topic' topic.id %}">return to {{ topic }}</a></p>
 {% endblock content %}
